@@ -1,0 +1,30 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "tracking": {
+    "host": "localhost",
+    "port": 3306,
+    "database": "tracker",
+    "name": "tracking",
+    "user": "root",
+    "connector": "mysql"
+  },
+  "test-db": {
+    "host": "localhost",
+    "port": 3306,
+    "database": "platform_remix_test",
+    "name": "test-db",
+    "user": "root",
+    "connector": "mysql"
+  },
+  "platform-remix": {
+    "host": "localhost",
+    "port": 3306,
+    "database": "platform_remix",
+    "name": "platform-remix",
+    "user": "root",
+    "connector": "mysql"
+  }
+}
