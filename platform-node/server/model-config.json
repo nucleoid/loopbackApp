@@ -39,12 +39,18 @@
     "$resolved": true
   },
   "Programs": {
-    "dataSource": "test-db",
+    "dataSource": "platform-remix",
     "public": true,
     "$promise": {},
     "$resolved": true
   },
   "Customers": {
+    "dataSource": "platform-remix",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Marketers": {
     "dataSource": "platform-remix",
     "public": true,
     "$promise": {},

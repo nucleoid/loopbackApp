@@ -6,7 +6,7 @@
     "validateUpsert": true
   },
   "mysql": {
-    "schema": "platform_remix_test",
+    "schema": "platform_remix",
     "table": "programs"
   },
   "properties": {
