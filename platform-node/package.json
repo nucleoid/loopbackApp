@@ -17,6 +17,7 @@
     "loopback-component-passport": "^2.0.0",
     "loopback-connector-mysql": "^2.2.1",
     "loopback-datasource-juggler": "^2.45.1",
+    "node-uuid": "^1.4.7",
     "passport-accesstoken": "^0.1.0",
     "serve-favicon": "^2.0.1"
   },

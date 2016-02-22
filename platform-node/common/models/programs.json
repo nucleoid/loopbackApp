@@ -155,8 +155,8 @@
       },
       "_selectable": false
     },
-    "uuid": {
-      "type": "Binary",
+    "rawUuid": {
+      "type": "Buffer",
       "required": true,
       "length": 16,
       "precision": null,
@@ -398,7 +398,7 @@
   },
   "validations": [],
   "relations": {
-    "customers": {
+    "customer": {
       "type": "belongsTo",
       "model": "Customers",
       "foreignKey": "customer_id"
