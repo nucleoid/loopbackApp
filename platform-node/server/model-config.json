@@ -14,7 +14,10 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "db",
+    "options": {
+      "emailVerificationRequired": false
+    }
   },
   "AccessToken": {
     "dataSource": "db",
@@ -54,6 +57,9 @@
     "dataSource": "platform-remix",
     "public": true,
     "$promise": {},
-    "$resolved": true
+    "$resolved": true,
+    "options": {
+      "emailVerificationRequired": false
+    }
   }
 }

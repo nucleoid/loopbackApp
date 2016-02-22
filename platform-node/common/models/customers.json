@@ -566,10 +566,10 @@
   },
   "acls": [
     {
-      "accessType": "READ",
+      "accessType": "*",
       "principalType": "ROLE",
-      "principalId": "$owner",
-      "permission": "ALLOW"
+      "principalId": "$everyone",
+      "permission": "DENY"
     }
   ],
   "methods": {}

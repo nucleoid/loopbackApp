@@ -2,6 +2,12 @@ var util = require('util');
 var uuid = require('node-uuid');
 
 module.exports = function(Programs) {
+  Programs.disableRemoteMethod("create", true);
+  Programs.disableRemoteMethod("upsert", true);
+  Programs.disableRemoteMethod("updateAll", true);
+  Programs.disableRemoteMethod("updateAttributes", false);
+  Programs.disableRemoteMethod("deleteById", true);
+  Programs.disableRemoteMethod("exists", true);
 
   Programs.afterInitialize = function() {
     this.uuid = uuid.unparse(this.rawUuid);
