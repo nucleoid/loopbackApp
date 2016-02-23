@@ -10,9 +10,26 @@
     "table": "marketers"
   },
   "hidden": [
-    "password"
+    "password", "rawUuid"
   ],
   "properties": {
+    "id": {
+      "type": "Number",
+      "id": true,
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "id",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
     "brandId": {
       "type": "Number",
       "required": false,
@@ -478,7 +495,7 @@
         "nullable": "Y"
       }
     },
-    "id": {
+    "customer_id": {
       "type": "Number",
       "required": false,
       "length": null,
@@ -568,8 +585,8 @@
         "nullable": "Y"
       }
     },
-    "uuid": {
-      "type": "Binary",
+    "rawUuid": {
+      "type": "Buffer",
       "required": true,
       "length": 16,
       "precision": null,

@@ -401,9 +401,9 @@
   },
   "validations": [],
   "relations": {
-    "customer": {
+    "marketer": {
       "type": "belongsTo",
-      "model": "Marketers",
+      "model": "Customers",
       "foreignKey": "customer_id"
     },
     "assignments": {
@@ -429,7 +429,7 @@
     {
       "accessType": "READ",
       "principalType": "ROLE",
-      "principalId": "$owner",
+      "principalId": "marketersCustomer",
       "permission": "ALLOW"
     }
   ],

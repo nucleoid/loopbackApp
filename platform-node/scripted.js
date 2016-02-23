@@ -7,9 +7,10 @@ var ds = loopback.createDataSource('mysql', {
     "user": "root",
     "connector": "mysql"
 });
-  
+
 // Discover and build models from INVENTORY table
-ds.discoverSchema('marketers', {schema: 'platform_remix', relations: false},
+ds.discoverSchema('application', {schema: 'platform_remix', relations: false},
   function (err, schema) {
+    if(err) console.log(err);
     console.log(JSON.stringify(schema));
   });

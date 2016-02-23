@@ -9,6 +9,9 @@
     "schema": "platform_remix",
     "table": "assignments"
   },
+  "hidden": [
+    "rawUuid"
+  ],
   "properties": {
     "id": {
       "type": "Number",
@@ -155,8 +158,8 @@
       },
       "_selectable": true
     },
-    "uuid": {
-      "type": "Binary",
+    "rawUuid": {
+      "type": "Buffer",
       "required": true,
       "length": 16,
       "precision": null,
